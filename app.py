@@ -129,7 +129,7 @@ with col2:
 
     respuesta = st.radio("Seleccione una opción:", ej["opciones"], index=None)
 
-    if st.button("Validar respuesta"):
+    if st.button("Validar respuesta", key="validar_respuesta"):
         if respuesta is None:
             st.warning("Debe seleccionar una respuesta.")
         else:
@@ -312,7 +312,7 @@ with col2:
         index=None
     )
 
-    if st.button("Validar respuesta"):
+    if st.button("Validar respuesta", key="validar_respuesta"):
         if respuesta is not None:
             st.session_state.respondido = True
             seleccion = ejercicio["opciones"].index(respuesta)
