@@ -150,7 +150,8 @@ with col2:
         if st.button("➡️ Siguiente ejercicio"):
             st.session_state.indice = (st.session_state.indice + 1) % len(ejercicios)
             st.session_state.respondido = False
-            st.experimental_rerun()import matplotlib.pyplot as plt
+            st.experimental_rerun()
+            import matplotlib.pyplot as plt
 from scipy.signal import gaussian
 import random
 
