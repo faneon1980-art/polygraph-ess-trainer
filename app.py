@@ -152,7 +152,7 @@ with col2:
             st.session_state.respondido = False
             st.experimental_rerun()
             import matplotlib.pyplot as plt
-from scipy.signal import gaussian
+from scipy.signal.windows import gaussian
 import random
 
 # -----------------------------------------------------------
